@@ -65,7 +65,7 @@ function eliminar(event) {
     const card = btn.closest(".card");
     const nombre = card.querySelector("h3").innerText;
 
-    if (array.length > 0){
+    if (array.length > 0) {
         Swal.fire({
             title: "Estás seguro que quieres borrar al producto del carrito?",
             icon: "question",
@@ -98,7 +98,7 @@ function eliminar(event) {
                 });
             }
         });
-    }else{
+    } else {
         Swal.fire({
             title: "No hay productos para borrar",
             text: "Agregalos al carrito.",
